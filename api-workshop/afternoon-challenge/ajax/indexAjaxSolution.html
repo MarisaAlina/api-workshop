@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mood</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+  <!--Code to be added-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="scriptAjax.js"></script>
+</head>
+
+<body>
+  <!--Header-->
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          API Workshop - Afternoon Challenge
+        </h1>
+        <p class="subtitle">
+          bring it <strong>on!</strong>
+          <i class="fas fa-rocket"></i>
+        </p>
+      </div>
+    </div>
+  </section>
+  <!--Header-->
+
+  <!--Body-->
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Get in the mood...
+      </h1>
+      <p class="subtitle">
+        Create your <strong>Mood</strong> playlists with Spotify!
+      </p>
+    </div>
+    <div class="container">
+      <input class="button is-warning is-rounded" type="button" value="I'm in the mood for sunshine" id="get-mood"></input>
+    </div>
+    <!--Code to be added-->
+    <!-- jquery `$ajax()`-->
+  <!-- <script type="text/javascript">
+     console.log( "ready!" );
+     $("get-mood-ajax").on("click", function(){
+
+       $.ajax({
+         method: "GET",
+         url: `https://api.spotify.com/v1/search?q=track:antarctica&type=track`
+       }).done(function(data) {
+         console.log(data);
+       });
+     });
+  </script> -->
+
+  <!--
+  <button onclick="getResponse()">the button text</button>
+
+  <script>
+  function getResponse(){
+  var request = new XMLHttpRequest();
+  request.open("GET", "TARGET URL (EX http://127.0.0.1:8000/)", false(async flag), "userName", "password");
+  request.send();
+}
+</script>
+-->
+<!-- jquery -->
+
+</section>
+<!--Body-->
+
+<!--FOOTER-->
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        <strong>API Workshop at Sage Pay</strong> by
+        <a href="https://github.com/MarisaAlina/"></a>
+        <span class="icon">
+          <i class="far fa-hand-peace"></i>
+        </span>
+        <p>2018</p>
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -6,6 +6,8 @@
   <title>Mood</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
   <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+  <!--Code to be added-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 <body>
   <!--Header-->
@@ -40,7 +42,16 @@
       <input class="button is-link is-rounded" type="button" value="I'm in the mood for sunshine" id="get-mood"></input>
     </div>
     <!--Code to be added-->
-    <!-- jquery -->
+    <!-- jquery `$ajax()`-->
+
+    <!-- $.ajax({
+      method: "GET", // request type here
+      url: `http://example.com/` // url here
+    }).done(function(data) {
+      // callback here
+      console.log(data);
+      // render what you want here
+    }); -->
     <!--
     <button onclick="getResponse()">the button text</button>
 
