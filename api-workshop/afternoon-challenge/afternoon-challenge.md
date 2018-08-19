@@ -31,7 +31,8 @@ The link tag in `<head>` loads the Bulma CSS framework from a content delivery n
 The `<script>` tag below loads icon/ emoji library from fontawesome.
 > The javascript code has to be added similarly so that it can be linked from the application's folder.
 
-*Note script with jQuery tag*
+**Note script with jQuery tag**
+
 Why do we have to add this script tag before our script?
 If you have our JavaScript script running before the page is fully loaded, and as such, before jQuery is fully loaded, the framework has no time to load our script and will not be able to find it
 
@@ -39,7 +40,7 @@ If you have our JavaScript script running before the page is fully loaded, and a
 jQuery is a Javascript library, which is technically not a programming language but a tool that makes writing common JavaScript tasks more concise. Additionally, it has the advantage of being cross-browser compatible.
 > Learn more about [jQuery here](https://www.digitalocean.com/community/tutorials/an-introduction-to-jquery)
 
-**jQuery & HTML**
+#### jQuery & HTML
 jQuery is tailor-made for selecting HTML elements and performing actions on those. Hence the basic syntax for a function that triggers this action is
 `$(selector).action()`
 
@@ -50,9 +51,9 @@ jQuery is tailor-made for selecting HTML elements and performing actions on thos
 In our HTML, we will use a button to trigger an event/ action. Therefore, you need to add the `id=` selector tag to the button element as reference for jQuery to find it.
 >Learn more [here](https://www.w3schools.com/jquery/jquery_selectors.asp).
 
-**[Example](https://jsfiddle.net/MarisaAlina/8ues69tr/)**
+**[Example jsfiddle](https://jsfiddle.net/MarisaAlina/8ues69tr/)**
 
-**[jQuery AJAX](https://learn.jquery.com/ajax/)**
+#### [jQuery AJAX](https://learn.jquery.com/ajax/)
 AJAX (Asynchronous JavaScript And XML) is a way for clients (browsers) and server to communicate in the background.
 The jQuery function `$.ajax()` exchanges data with the server and updates HTML element without reloading the whole page.
 * _How so?_
@@ -82,10 +83,11 @@ $.get( "foo.php", function( response ) {
 
 > Using jQuery's `$.ajax()` function, we’ll be making a GET request to the [TFL API](https://api.tfl.gov.uk/AirQuality).
 
-*Note*
+**Note**
+
 The `id=` attributes is need for jQuery to reference the HTML elements and update the text with the values from the properties of the JSON object received from the API call.
 
-*What just happened?*
+#### What just happened?
 When calling the API, it is serviced to your browser from TFL's web server, meaning the HTTP verb `GET`, URL & params used by us tell TFL, which service from their API menu we are calling to get back the Air Quality data in a JSON object.
 As soon as our jQuery script has executed the function, i.e. did the API call, it receives the response in the `data` variable. The received data is in JSON format, we print it with the function `JSON.stringify()`. `.html()` updates the HTML element with the referenced selector tag to show the content of the returned JSON object on our page.
 
