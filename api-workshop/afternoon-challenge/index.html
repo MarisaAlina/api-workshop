@@ -1,84 +1,77 @@
-  <!DOCTYPE html>
-  <html>
+<!DOCTYPE html>
+<html>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Challenge</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Challenge</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+  <!-- console test -->
+  <script>
+  $(document).ready(function() {
+    console.log( "ready!" );
+  });
+  </script>
+  <!--script to be added-->
+  <script src="my-functions.js"></script>
+</head>
 
-      <!--script to be added-->
-    <script src="my-functions.js"></script>
-  </head>
-
-  <body>
-    <!--Header-->
-    <section class="hero is-primary">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
-            API Workshop - Afternoon Challenge
-          </h1>
-          <p class="subtitle">
-            bring it <strong>on!</strong>
-            <i class="fas fa-rocket"></i>
-          </p>
-        </div>
-      </div>
-    </section>
-    <!--Header-->
-
-    <!--Body-->
-    <section class="section">
+<body>
+  <!--Header-->
+  <section class="hero is-primary">
+    <div class="hero-body">
       <div class="container">
         <h1 class="title">
-          Get in the mood...
+          API Workshop - Afternoon Challenge
         </h1>
         <p class="subtitle">
-          Create your <strong>Journey</strong> with TFL!
+          bring it <strong>on!</strong>
+          <i class="fas fa-rocket"></i>
         </p>
       </div>
-      <div class="container">
-        <input class="button is-primary" type="button" value="Trigger me" id="trigger"></input>
-        <input class="button" type="button" value="Air Quality" id="air"/>
-        <input class="button" type="button" value="Click me" id="test"/>
-        <button id="test2"> Test 2 </button>
-      </div>
-      <!--Code to be added-->
-      <!-- jquery -->
-      <!--
-      <button onclick="getResponse()">the button text</button>
+    </div>
+  </section>
+  <!--Header-->
 
-      <script>
-      function getResponse(){
-      var request = new XMLHttpRequest();
-      request.open("GET", "TARGET URL (EX http://127.0.0.1:8000/)", false(async flag), "userName", "password");
-      request.send();
-    }
-  </script>
-  -->
-  <!-- jquery -->
+  <!--Body-->
+  <section class=section>
+    <h1 class="title">
+      Get in the mood...
+    </h1>
+    <p class="subtitle">
+      Create your <strong>Journey</strong> with TFL!
+    </p>
+
+    <div class="container">
+      <input class="button is-primary" type="button" value="Trigger me" id="trigger" />
+      <input class="button" type="button" value="Click me" id="test" />
+      <!-- doesn't work -->
+      <button id="button tag"> Test 2 </button>
+
+      <div class="container">
+        <input class="button" type="button" value="Air Quality" id="air" />
+      </div>
+    </div>
 
   </section>
   <!--Body-->
 
-  <!--FOOTER-->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="content has-text-centered">
-        <p>
-          <strong>API Workshop at Sage Pay</strong> by
-          <a href="https://github.com/MarisaAlina/"></a>
-          <span class="icon">
-            <i class="far fa-hand-peace"></i>
-          </span>
-          <p>2018</p>
-        </p>
+        <strong>API Workshop at Sage Pay</strong> by
+        <a href="https://github.com/MarisaAlina/"></a>
+        <span class="icon">
+          <i class="far fa-hand-peace"></i>
+        </span>
+        <p>2018</p>
       </div>
     </div>
   </footer>
+  <!-- /FOOTER -->
+</body>
 
-  </body>
-  </html>
+</html>

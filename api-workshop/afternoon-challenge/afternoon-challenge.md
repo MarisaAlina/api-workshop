@@ -3,7 +3,7 @@ You are going to build a mood playlist with Spotify.
 
 The workshop will use:
 * [Bulma CSS Framework](https://bulma.io/documentation/)
-* [jQuery here](https://www.digitalocean.com/community/tutorials/an-introduction-to-jquery)
+* [jQuery](https://www.digitalocean.com/community/tutorials/an-introduction-to-jquery)
 * [Chrome Console](https://developers.google.com/web/tools/chrome-devtools/console/)
 
 ### Chrome Logs
@@ -39,7 +39,7 @@ If you have our JavaScript script running before the page is fully loaded, and a
 jQuery is a Javascript library, which is technically not a programming language but a tool that makes writing common JavaScript tasks more concise. Additionally, it has the advantage of being cross-browser compatible.
 > Learn more about [jQuery here](https://www.digitalocean.com/community/tutorials/an-introduction-to-jquery)
 
-*jQuery & HTML*
+**jQuery & HTML**
 jQuery is tailor-made for selecting HTML elements and performing actions on those. Hence the basic syntax for a function that triggers this action is
 `$(selector).action()`
 
@@ -48,8 +48,11 @@ jQuery is tailor-made for selecting HTML elements and performing actions on thos
 * `action()` performs the event on the element(s)
 
 In our HTML, we will use a button to trigger an event/ action. Therefore, you need to add the `id=` selector tag to the button element as reference for jQuery to find it.
+>Learn more [here](https://www.w3schools.com/jquery/jquery_selectors.asp).
 
-*[jQuery AJAX](https://learn.jquery.com/ajax/)*
+**[Example](https://jsfiddle.net/MarisaAlina/8ues69tr/)**
+
+**[jQuery AJAX](https://learn.jquery.com/ajax/)**
 AJAX (Asynchronous JavaScript And XML) is a way for clients (browsers) and server to communicate in the background.
 The jQuery function `$.ajax()` exchanges data with the server and updates HTML element without reloading the whole page.
 * _How so?_
@@ -59,6 +62,7 @@ jQuery's `$.ajax()` function however instructs the browser to send GET or POST r
 Despite its name, the function doesn't use XML anymore but transport the data in JSON format.
 * _What's with the asynchronous?_
 The asynchronous in `$.ajax()` handles the response in a callback function. This simply means that the response is not immediately available, e.g. in a variable but that we need to call another function (["callback function"](https://learn.jquery.com/ajax/key-concepts/)), which handles the response and data it returned. This is actually what allows us to continue to use the website without it needing to reload.
+
 _Will not work_
 ```javascript
 var response;
@@ -84,3 +88,10 @@ The `class=` attributes help jQuery to reference the HTML elements and update th
 *What just happened?*
 When calling the API, it is serviced to your browser from Spotify's web server, meaning the HTTP verb, URL & params used by us tell Spotify, which service from their API menu we are calling to get back the playlist data in a JSON object.
 As soon as our jQuery script has executed the function, i.e. did the API call, it receives the response in the *X* variable. The received data is in JSON format and the function updates the HTML element with the referenced class attribute to show the content of the returned JSON object.
+
+
+### Test with [Python Simple HTTP server](https://www.pythonforbeginners.com/modules-in-python/how-to-use-simplehttpserver/)
+* Install python (most Macs have it installed already, check `python -V`)
+* `cd` into folder with `index.html`
+* run `python -m SimpleHTTPServer 8080`
+* go to your browser and access `http://localhost:8080/index.html`

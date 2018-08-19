@@ -7,10 +7,26 @@
   <script> $(document).ready(function() {
     console.log( "ready!" );
   });
+
   $("#test").click(function(){
     alert("Clicked");
   });
+
+  $("#air").click(function(){
+    $.ajax({
+      dataType: "json",
+      type:"GET",
+      url: api.tfl.gov.uk/AirQuality,
+      success: function(result) {
+        console.log(result);
+      },
+      error: function(error){
+        console.console.log(`Error ${error}`);
+      }
+    });
+  });
 </script>
+
 <script src="my-functions.js"></script>
 
 </head>

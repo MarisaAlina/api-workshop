@@ -1,30 +1,27 @@
-//
-// $("#trigger").click(function(){
-//   console.log("clicked");
-// })
-//
-// $("button").click(function(){
-//   $("#trigger").$("#trigger").click(function(){
-//     console.log("clicked");
-//   })
-// })
-
+$(document).ready(function() {
+  console.log( "ready!" );
+});
 
 // Function definition with variable
-var onClick = function(){
+var onClick = function() {
   alert('Clicked');
 };
 // Function call
 $('#trigger').click(onClick);
 
-// Function call & definition in one
-$("#test").click(function(){
-  alert("Clicked");
+// Combined
+$("#test").click(function() {
+  alert("Clicked me now");
 });
 
-$("#test2").click(function(){
-  alert("Clicked");
+// doesn't work
+$('#button tag').click(function() {
+  alert('simple button');
 });
+
+// https://medium.freecodecamp.org/here-is-the-most-popular-ways-to-make-an-http-request-in-javascript-954ce8c95aaa
+
+const URL = "https://api.tfl.gov.uk/AirQuality";
 
 $("#air").click(function(){
   $.ajax({
@@ -47,21 +44,3 @@ $("button").click(function(){
     console.log(`${data}`)
   });
 });
-
-// $.getJSON(theUrlYouneed, function (data){
-// \\ leave this blank for now but inside this function we will write the code to manipulate the API requests
-// });
-// data.map(function(arrival)){
-//   console.log(arrival);
-// });
-
-// <button onclick="getResponse()">the button text</button>
-//
-// <script>
-// function getResponse(){
-// var request = new HttpRequest();
-// request.open("GET", "TARGET URL (EX http://127.0.0.1:8000/)", false(async flag), "userName", "password");
-// request.send();
-// }
-// </script>
--->
