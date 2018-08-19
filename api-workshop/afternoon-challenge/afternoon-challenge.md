@@ -79,15 +79,15 @@ $.get( "foo.php", function( response ) {
   console.log( response ); // server response
 });
 ```
-[Ajax Spotify call](https://medium.com/@charlie.spencer/making-a-simple-ajax-request-d0c0f9f896fe)
-> Using jQuery's `$.ajax()` function, we’ll be making a GET request to the Spotify API.
+
+> Using jQuery's `$.ajax()` function, we’ll be making a GET request to the [TFL API](https://api.tfl.gov.uk/AirQuality).
 
 *Note*
-The `class=` attributes help jQuery to reference the HTML elements and update the text with the values from the properties of the JSON object received from the API call.
+The `id=` attributes is need for jQuery to reference the HTML elements and update the text with the values from the properties of the JSON object received from the API call.
 
 *What just happened?*
-When calling the API, it is serviced to your browser from Spotify's web server, meaning the HTTP verb, URL & params used by us tell Spotify, which service from their API menu we are calling to get back the playlist data in a JSON object.
-As soon as our jQuery script has executed the function, i.e. did the API call, it receives the response in the *X* variable. The received data is in JSON format and the function updates the HTML element with the referenced class attribute to show the content of the returned JSON object.
+When calling the API, it is serviced to your browser from TFL's web server, meaning the HTTP verb `GET`, URL & params used by us tell TFL, which service from their API menu we are calling to get back the Air Quality data in a JSON object.
+As soon as our jQuery script has executed the function, i.e. did the API call, it receives the response in the `data` variable. The received data is in JSON format, we print it with the function `JSON.stringify()`. `.html()` updates the HTML element with the referenced selector tag to show the content of the returned JSON object on our page.
 
 
 ### Test with [Python Simple HTTP server](https://www.pythonforbeginners.com/modules-in-python/how-to-use-simplehttpserver/)
