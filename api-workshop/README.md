@@ -12,7 +12,7 @@ Make sure you have the following installed in your computer:
 
 Other useful links:
 * [Agenda]()
-* [Workshop-Slides]()
+* [Workshop-Slides](https://docs.google.com/presentation/d/1xpoDAa8vM2hQdt9AeBPhAG0j6MjsfSCMOmN0YJSwon0/edit?usp=sharing)
 * [Feedback Survey](https://marisa56.typeform.com/to/Yj2mCx)
 
 ## What's next:
