@@ -44,6 +44,19 @@ function log_them() { // function definition
 log_them(); // function call
 ```
 
+<<<<<<< HEAD
+=======
+### Adding Behaviour: defining scripts
+The link tag in `<head>` loads the Bulma CSS framework from a content delivery network (CDN) so that you don’t have to download it and place it in your project.
+The `<script>` tag below loads icon/ emoji library from fontawesome.
+> The javascript code has to be added similarly so that it can be linked from the application's folder.
+
+**Note script with jQuery tag**
+
+Why do we have to add this script tag before our script?
+If you have our JavaScript script running before the page is fully loaded, and as such, before jQuery is fully loaded, the framework has no time to load our script and will not be able to find it
+
+>>>>>>> 31464f405e2b14d02c73154199d6e268591506f5
 ### What is jQuery
 jQuery is a Javascript library, which is technically not a programming language but a tool that makes writing common JavaScript tasks more concise. Additionally, it has the advantage of being cross-browser compatible.
 > Learn more about [jQuery here](https://www.digitalocean.com/community/tutorials/an-introduction-to-jquery)
@@ -92,6 +105,10 @@ $.get( "foo.php", function( response ) {
 > Using jQuery's `$.ajax()` function, we’ll be making a GET request to the [TFL API](https://api.tfl.gov.uk/AirQuality).
 
 **Note**
+<<<<<<< HEAD
+=======
+
+>>>>>>> 31464f405e2b14d02c73154199d6e268591506f5
 The `id=` attributes is need for jQuery to reference the HTML elements and update the text with the values from the properties of the JSON object received from the API call.
 
 #### What just happened?
