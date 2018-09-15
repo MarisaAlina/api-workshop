@@ -15,12 +15,11 @@ Other useful links:
 * [Workshop-Slides](https://docs.google.com/presentation/d/1xpoDAa8vM2hQdt9AeBPhAG0j6MjsfSCMOmN0YJSwon0/edit?usp=sharing)
 * [Feedback Survey](https://marisa56.typeform.com/to/Yj2mCx)
 
-## What's next:
-<<<<<<< HEAD
-* To experiment with Backend API development, [checkout this tutorial](https://spring.io/guides/gs/consuming-rest-jquery/).
-=======
 Please clone the afternoon-challenge to start developing.
+
+## What's next:
+* To experiment with Backend API development, [checkout this tutorial](https://spring.io/guides/gs/consuming-rest-jquery/).
+
 
 ### For future interest:
 To experiment with Backend API development, [checkout this tutorial](https://spring.io/guides/gs/consuming-rest-jquery/).
->>>>>>> 31464f405e2b14d02c73154199d6e268591506f5
