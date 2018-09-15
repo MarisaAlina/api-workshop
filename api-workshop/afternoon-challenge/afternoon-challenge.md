@@ -6,12 +6,30 @@ The workshop will use:
 * [jQuery](https://www.digitalocean.com/community/tutorials/an-introduction-to-jquery)
 * [Chrome Console](https://developers.google.com/web/tools/chrome-devtools/console/)
 
+### Running website locally with [Python Simple HTTP server](https://www.pythonforbeginners.com/modules-in-python/how-to-use-simplehttpserver/)
+* Install python (most Macs have it installed already, check `python -V`)
+* `cd` into folder with `index.html`
+* run `python -m SimpleHTTPServer 8080`
+* go to your browser and access `http://localhost:8080/index.html`
+
+_What does this do?_
+We just instructed Python to setup a server running locally (on your computer/machine), which serves the website through localhost.
+
 ### Chrome Logs
 * Open the Chrome console by right-clicking anywhere on a page and choose `inspect`
 * Go to `Console` and click on `Default levels`
 * Choose `Verbose`. `Default levels` should now have changed to `All levels`.
 This will allow us to see any log output and help you during the challenge
 * Test the console by typing `console.log("hello")`. You should see a `hello` in the next line popping up.
+
+### Adding Behaviour: defining scripts
+The link tag in `<head>` loads the Bulma CSS framework from a content delivery network (CDN) so that you don’t have to download it and place it in your project.
+The `<script>` tag below loads icon/ emoji library from fontawesome.
+> The javascript code has to be added similarly so that it can be linked from the application's folder.
+
+**Note script with jQuery tag**
+Why do we have to add this script tag before our script?
+If you have our JavaScript script running before the page is fully loaded, and as such, before jQuery is fully loaded, the framework has no time to load our script and will not be able to find it
 
 *JSON function with JavaScript - Console test*
 ```JavaScript
@@ -26,20 +44,11 @@ function log_them() { // function definition
 log_them(); // function call
 ```
 
-### Adding Behaviour: defining scripts
-The link tag in `<head>` loads the Bulma CSS framework from a content delivery network (CDN) so that you don’t have to download it and place it in your project.
-The `<script>` tag below loads icon/ emoji library from fontawesome.
-> The javascript code has to be added similarly so that it can be linked from the application's folder.
-
-*Note script with jQuery tag*
-Why do we have to add this script tag before our script?
-If you have our JavaScript script running before the page is fully loaded, and as such, before jQuery is fully loaded, the framework has no time to load our script and will not be able to find it
-
 ### What is jQuery
 jQuery is a Javascript library, which is technically not a programming language but a tool that makes writing common JavaScript tasks more concise. Additionally, it has the advantage of being cross-browser compatible.
 > Learn more about [jQuery here](https://www.digitalocean.com/community/tutorials/an-introduction-to-jquery)
 
-**jQuery & HTML**
+#### jQuery & HTML
 jQuery is tailor-made for selecting HTML elements and performing actions on those. Hence the basic syntax for a function that triggers this action is
 `$(selector).action()`
 
@@ -50,9 +59,9 @@ jQuery is tailor-made for selecting HTML elements and performing actions on thos
 In our HTML, we will use a button to trigger an event/ action. Therefore, you need to add the `id=` selector tag to the button element as reference for jQuery to find it.
 >Learn more [here](https://www.w3schools.com/jquery/jquery_selectors.asp).
 
-**[Example](https://jsfiddle.net/MarisaAlina/8ues69tr/)**
+**[Example jsfiddle](https://jsfiddle.net/MarisaAlina/8ues69tr/)**
 
-**[jQuery AJAX](https://learn.jquery.com/ajax/)**
+#### [jQuery AJAX](https://learn.jquery.com/ajax/)
 AJAX (Asynchronous JavaScript And XML) is a way for clients (browsers) and server to communicate in the background.
 The jQuery function `$.ajax()` exchanges data with the server and updates HTML element without reloading the whole page.
 * _How so?_
@@ -82,16 +91,9 @@ $.get( "foo.php", function( response ) {
 
 > Using jQuery's `$.ajax()` function, we’ll be making a GET request to the [TFL API](https://api.tfl.gov.uk/AirQuality).
 
-*Note*
+**Note**
 The `id=` attributes is need for jQuery to reference the HTML elements and update the text with the values from the properties of the JSON object received from the API call.
 
-*What just happened?*
+#### What just happened?
 When calling the API, it is serviced to your browser from TFL's web server, meaning the HTTP verb `GET`, URL & params used by us tell TFL, which service from their API menu we are calling to get back the Air Quality data in a JSON object.
 As soon as our jQuery script has executed the function, i.e. did the API call, it receives the response in the `data` variable. The received data is in JSON format, we print it with the function `JSON.stringify()`. `.html()` updates the HTML element with the referenced selector tag to show the content of the returned JSON object on our page.
-
-
-### Test with [Python Simple HTTP server](https://www.pythonforbeginners.com/modules-in-python/how-to-use-simplehttpserver/)
-* Install python (most Macs have it installed already, check `python -V`)
-* `cd` into folder with `index.html`
-* run `python -m SimpleHTTPServer 8080`
-* go to your browser and access `http://localhost:8080/index.html`

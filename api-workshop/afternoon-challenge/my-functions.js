@@ -2,16 +2,16 @@ $(document).ready(function(){
 
   console.log("TFL Air Quality Challenge");
 
-  const URL = "https://api.tfl.gov.uk/AirQuality";
+  const URL = "https://api.tfl.gov.uk/AirQuality"; // ?
 
   console.log("tfl air quality call in log");
-  $("#air").click(function(){
+  $("#inside").click(function(){
     $.ajax({
       dataType: "json",
-      type:"GET",
-      url: URL,
+      type:"GET", // ?
+      url: URL, // ?
       success: function(data) {
-        console.log(data);
+        console.log(data); // ?
       }
     });
   });
@@ -23,7 +23,7 @@ $(document).ready(function(){
       console.log(data);
     }});
   });
-
+  //
   console.log("tfl call in html with JSON.stringify")
   $("#inside").click(function(){ // ajax function definition that will be executed with the selector button
     $.ajax({url: URL, success: function(data){ //.ajax returns result, which contains the returned data in JSON format and us used here immediately as param for the callback success function

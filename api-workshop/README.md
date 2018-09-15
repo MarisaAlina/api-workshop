@@ -16,4 +16,4 @@ Other useful links:
 * [Feedback Survey](https://marisa56.typeform.com/to/Yj2mCx)
 
 ## What's next:
-To experiment with Backend API development, [checkout this tutorial](https://spring.io/guides/gs/consuming-rest-jquery/).
+* To experiment with Backend API development, [checkout this tutorial](https://spring.io/guides/gs/consuming-rest-jquery/).
