@@ -44,8 +44,6 @@ function log_them() { // function definition
 log_them(); // function call
 ```
 
-<<<<<<< HEAD
-=======
 ### Adding Behaviour: defining scripts
 The link tag in `<head>` loads the Bulma CSS framework from a content delivery network (CDN) so that you don’t have to download it and place it in your project.
 The `<script>` tag below loads icon/ emoji library from fontawesome.
@@ -56,20 +54,19 @@ The `<script>` tag below loads icon/ emoji library from fontawesome.
 Why do we have to add this script tag before our script?
 If you have our JavaScript script running before the page is fully loaded, and as such, before jQuery is fully loaded, the framework has no time to load our script and will not be able to find it
 
->>>>>>> 31464f405e2b14d02c73154199d6e268591506f5
-### What is jQuery
-jQuery is a Javascript library, which is technically not a programming language but a tool that makes writing common JavaScript tasks more concise. Additionally, it has the advantage of being cross-browser compatible.
+### What is jQuery?
+jQuery is a Javascript library that provides functions to make writing common JavaScript tasks easier and more concise. Additionally, it has the advantage of being cross-browser compatible.
 > Learn more about [jQuery here](https://www.digitalocean.com/community/tutorials/an-introduction-to-jquery)
 
 #### jQuery & HTML
-jQuery is tailor-made for selecting HTML elements and performing actions on those. Hence the basic syntax for a function that triggers this action is
+jQuery has an easy to use API for selecting HTML elements and performing actions on those. The basic syntax for a function that triggers this action is
 `$(selector).action()`
 
 * `$` defines or accesses jQuery
-* `(selector)` finds or queries for the HTML element
-* `action()` performs the event on the element(s)
+* `(selector)` finds the HTML element
+* `action()` performs action() on the selected element(s)
 
-In our HTML, we will use a button to trigger an event/ action. Therefore, you need to add the `id=` selector tag to the button element as reference for jQuery to find it.
+In our HTML, we will use a button to trigger an event/action. Therefore, you need to add the `id=` selector tag to the button element for jQuery to find it.
 >Learn more [here](https://www.w3schools.com/jquery/jquery_selectors.asp).
 
 **[Example jsfiddle](https://jsfiddle.net/MarisaAlina/8ues69tr/)**
@@ -81,9 +78,9 @@ The jQuery function `$.ajax()` exchanges data with the server and updates HTML e
 Normally, HTML pages are static and have to be reloaded when an event (e.g. the click of a button) happens.
 jQuery's `$.ajax()` function however instructs the browser to send GET or POST request via an asynchronous HTTP API call to the server and receive it's response - all in the background! The function updates the HTML element it references with the received data.
 * _Have you noticed the response format?_
-Despite its name, the function doesn't use XML anymore but transport the data in JSON format.
+Despite its name, the function doesn't use XML anymore to communicate but JSON.
 * _What's with the asynchronous?_
-The asynchronous in `$.ajax()` handles the response in a callback function. This simply means that the response is not immediately available, e.g. in a variable but that we need to call another function (["callback function"](https://learn.jquery.com/ajax/key-concepts/)), which handles the response and data it returned. This is actually what allows us to continue to use the website without it needing to reload.
+The asynchronous in `$.ajax()` handles the response in a callback function. This simply means that the response is not immediately returned. When it is available it will call another function (["callback function"](https://learn.jquery.com/ajax/key-concepts/)), which handles the response and data it returned. This is actually what allows us to continue to use the website. Without it the page would wait until the response is returned before responding to page interaction.
 
 _Will not work_
 ```javascript
@@ -105,11 +102,7 @@ $.get( "foo.php", function( response ) {
 > Using jQuery's `$.ajax()` function, we’ll be making a GET request to the [TFL API](https://api.tfl.gov.uk/AirQuality).
 
 **Note**
-<<<<<<< HEAD
-=======
-
->>>>>>> 31464f405e2b14d02c73154199d6e268591506f5
-The `id=` attributes is need for jQuery to reference the HTML elements and update the text with the values from the properties of the JSON object received from the API call.
+The `id=` attributes are used by jQuery to select the HTML elements and update the text with the values from the properties of the JSON object received from the API call.
 
 #### What just happened?
 When calling the API, it is serviced to your browser from TFL's web server, meaning the HTTP verb `GET`, URL & params used by us tell TFL, which service from their API menu we are calling to get back the Air Quality data in a JSON object.
