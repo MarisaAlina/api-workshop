@@ -99,7 +99,7 @@ $.get( "foo.php", function( response ) {
 });
 ```
 
-> Using jQuery's `$.ajax()` function, we’ll be making a GET request to the [TFL API](https://api.tfl.gov.uk/AirQuality).
+Using jQuery's `$.ajax()` function, we’ll be making a GET request to the [TFL API documentation](https://api.tfl.gov.uk/swagger/ui/index.html?url=/swagger/docs/v1#!/AirQuality/).
 
 **Note**
 The `id=` attributes are used by jQuery to select the HTML elements and update the text with the values from the properties of the JSON object received from the API call.
