@@ -42,17 +42,17 @@ $(document).ready(function(){
   });
 
 console.log("tfl call in html with JSON.stringify nice ly formatted and HTML `<pre>` tags")
-  $("#inside").click(function(){ // ajax function definition that will be executed with the selector button
-    $.ajax({url: URL, success: function(data){ //.ajax returns result, which contains the returned data in JSON format and us used here immediately as param for the callback success function
-      $("#div2").html("<pre>" +JSON.stringify(data, null, 4) +"</pre>"); // puts the success result into the div selector element via the .html function. We again pass the result as the param to be printed. Now we can make our page "understand" JSON by using the function JSON.stringify and finally make it pretty by using HTML `<pre>` tags
+  $("#inside").click(function(){ 
+    $.ajax({url: URL, success: function(data){ 
+      $("#div2").html("<pre>" +JSON.stringify(data, null, 4) +"</pre>"); // stringify will format the response data using no filter on these (null) and ident ecah of the elements woth 4 spaces [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify] 
       console.log(data);
     }});
   });
 
   console.log("tfl call in html and pick up a specific element from the JSON response")
-  $("#inside").click(function(){ // ajax function definition that will be executed with the selector button
-    $.ajax({url: URL, success: function(data){ //.ajax returns result, which contains the returned data in JSON format and us used here immediately as param for the callback success function
-      $("#div3").html("<pre>" + data.currentForecast[0].forecastSummary +"</pre>"); // puts the success result into the div selector element via the .html function. We again pass the result as the param to be printed. Now we can make our page "understand" JSON by using the function JSON.stringify and finally make it pretty by using HTML `<pre>` tags
+  $("#inside").click(function(){ 
+    $.ajax({url: URL, success: function(data){ 
+      $("#div3").html("<pre>" + data.currentForecast[0].forecastSummary +"</pre>"); // extracting the first forecastSummary. 
       console.log(data);
     }});
   });
