@@ -9,6 +9,7 @@
   <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
   <!--script to be added-->
+  <script type="text/javascript" src="my-functions-solution.js"></script>
 </head>
 
 <body>
@@ -37,12 +38,14 @@
       Checkout <strong>the freshness of the air</strong> with TFL!
     </p>
 
-<!-- How can you identify HTML elements?-->
-    <button class="button is-dark">Air Quality Here</button>
+    <!-- Log only -->
+    <!-- <button class="button is-text" id="air">Air Quality</button> -->
+
+    <button class="button is-dark" id="request">Air Quality Here</button>
     <div class="content has-text-centered">
       <h3>The air quality is: </h3>
     </div>
-    <div class="notification">
+    <div class="notification" id="response">
       <p>return data here</p>
     </div>
 

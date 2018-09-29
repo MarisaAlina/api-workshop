@@ -2,26 +2,24 @@ $(document).ready(function(){
 
   console.log("TFL Air Quality Challenge");
 
-  const URL = ""; // which URL do you have to use? Check the documentation!
+  const URL = "https://api.tfl.gov.uk/AirQuality"; // ?
 
   console.log("tfl air quality call in log");
   $("#request").click(function(){
     $.ajax({
-      dataType: "json" // this is an example for a parameter of the API request. Add the remaining in the same manner.
-      // Add the method type of the call
-      // Add the URL to use
+      dataType: "json",
+      type:"GET", // ?
+      url: URL, // ?
       success: function(data) {
-       // Tell the console to print the response in the log
+        console.log(data); // ?
       }
     });
   });
 
-  // Now "print" the response to the console. Define a function for this (hint: check the my-demo-functions.js script in the demo folder)
-  console.log("tfl call with html and HTML `<pre>` tags")
+  console.log("tfl call in html") //only prints JSON to console
   $("#request").click(function(){ // ajax function definition that will be executed with the selector button
-    $.ajax({url: URL, success: function(data){ //.ajax() returns the result of the API call, which contains the returned data by standard in JSON format.
-      // We want to use it immediately and therefore set it as parameter for the callback success function.
-      // Define a function for this and put the success result into the div selector element (hint: you can use the .html() method).
+    $.ajax({url: URL, success: function(data){ //.ajax returns result, which contains the returned data in JSON format and us used here immediately as param for the callback success function
+      $("#response").html("<pre>" + data + "</pre>"); // puts the success result into the div selector element via the .html function. We again pass the result as the param to be printed.
       console.log(data);
     }});
   });
@@ -29,7 +27,7 @@ $(document).ready(function(){
   console.log("tfl call in html with JSON.stringify")
   $("#request").click(function(){
     $.ajax({url: URL, success: function(data){
-      // Make jQuery "understand" JSON
+      $("#response").html(JSON.stringify(data)); // We can make our page "understand" JSON by using the function JSON.stringify
       console.log(data);
     }});
   });
@@ -37,7 +35,7 @@ $(document).ready(function(){
   console.log("tfl call in html with JSON.stringify and HTML `<pre>` tags")
   $("#request").click(function(){
     $.ajax({url: URL, success: function(data){
-      // make it pretty! Use HTML `<pre>` tags
+      $("#response").html("<pre>" +JSON.stringify(data) +"</pre>"); // make it pretty! Use HTML `<pre>` tags
       console.log(data);
     }});
   });
@@ -45,7 +43,7 @@ $(document).ready(function(){
   console.log("tfl call in html and pick up a specific element from the JSON response")
   $("#request").click(function(){
     $.ajax({url: URL, success: function(data){
-      // extract the JSON property first forecastSummary
+      $("#response").html("<pre>" + data.currentForecast[0].forecastSummary +"</pre>"); // extracting the first forecastSummary
       console.log(data);
     }});
   });
