@@ -122,11 +122,11 @@ Open `my-functions.js`.
 2. Add the correct method type of the call and the URL to use (hint: the documentation will specify which HTTP method to use).
 3. Tell the console to print the response in the log
 
-Now you should see the response of the API call in the console. But we want to embedd it into our HTML template.
+Now you should see the response of the API call in the console. But we want to embed it into our HTML template.
 
 4. We want to use the response immediately and therefore set it as parameter `success` in our callback function. Define a function for this and update the div element and selector with the response object (hint: you can use the `.html()` method).
 
-You should see the JSON response now on your HTML page when you hit the button. But who wants to see this blurp? We can improve that!
+You should see the JSON response now on your HTML page when you hit the button. But who wants to see this blurb? We can improve that!
 
 5. jQuery "understands" JSON, google for the use of the `stringify()` method
 6. Make it even prettier! Use HTML `<pre>` tags
