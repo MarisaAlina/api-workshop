@@ -17,4 +17,5 @@ Make sure you have the following installed in your computer:
 * [Feedback Survey](https://marisa56.typeform.com/to/Yj2mCx)
 
 # What's next to learn after the workshop:
-To experiment with Backend API development, [checkout this tutorial](https://spring.io/guides/gs/consuming-rest-jquery/).
+To experiment with Backend API development, checkout this tutorial about creating a simple [jQuery client with the Spring framework](https://spring.io/guides/gs/consuming-rest-jquery/) and building the corresponding [`hello world` web service](https://spring.io/guides/gs/rest-service/).
+If you want to look into building your own weather app, checkout [this tutorial](https://codeburst.io/build-a-weather-website-in-30-minutes-with-node-js-express-openweather-a317f904897b).

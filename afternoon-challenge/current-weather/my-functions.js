@@ -19,11 +19,10 @@ $(document).ready(function(){
   console.log("tfl call in html and pick up a specific element from the JSON response")
   $("#request").click(function(){
     $.ajax({url: URL, success: function(data){
-      $("#response").html("<pre>" + data.weather.description +"</pre>"); // extracting the description value from the weather key of the json response object
+      $("#response").html("<pre>" + data.weather[0].description +"</pre>"); // extracting the description value from the weather key of the json response object
       console.log(data);
     }});
   });
 
 
 });
-// https://medium.freecodecamp.org/here-is-the-most-popular-ways-to-make-an-http-request-in-javascript-954ce8c95aaa
