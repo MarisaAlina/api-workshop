@@ -80,22 +80,18 @@ Despite its name, the function doesn't use XML anymore to communicate but JSON.
 
 The "asynchronousness" in `$.ajax()` handles the response in a callback function. This simply means that the response is not immediately returned. When it is available after the API call is made, it will call another function (["callback function"](https://learn.jquery.com/ajax/key-concepts/)), which handles the response and data it returned. This is actually what allows us to continue to use the website. Without it the page would wait until the response is returned before responding to page interaction. Test it yourself:
 
-_Callback example where_ `response` _is the callback function_
+_`$.ajax()` example where_ `response` _is the callback function_
 ```javascript
-$.get( "foo.php", function( response ) {
-  console.log( response ); // server response
+// ajax() function use
+$("#demo").click(function(){ // ajax function definition that will be executed on the button's selector
+  $.ajax({
+    url: "demo.txt", // making a call to a static resource in the same folder
+    success: function(result){ // here we define the callback function in the success case
+    $("#div1").html(result); // `.html()` puts the success result into the div selector element
+    console.log("demo has been loaded");
+  }
 });
-```
-
-_Will not work - why?_
-```javascript
-var response;
-
-$.get("foo.php", function( r ) { // We cannot assign a variable to in the definition and use it later.
-  response = r;
 });
-
-console.log( response );
 ```
 
 #### Demo time!
@@ -132,6 +128,7 @@ You should see the JSON response now on your HTML page when you hit the button. 
 6. Make it even prettier! Use HTML `<pre>` tags
 
 Still, anyone visiting our page would simply want a single line telling them the actual air quality.
+
 7. Extract the JSON property `forecastSummary` from the returned JSON object
 
 _Hints:_
