@@ -44,7 +44,7 @@ If you have our JavaScript script running before the page is fully loaded, the f
 
 __Now it's your turn__
 
- We want to use the `my-functions.js` script. Add it to the appropriate place in the `index.html` template. The javascript code has to be added similarly to Bulma's external stylesheet so that it can be linked from the application's folder.
+We want to use the `my-functions.js` script. Add it to the appropriate place in the `index.html` template. The javascript code has to be added similarly to Bulma's external stylesheet so that it can be linked from the application's folder.
 
 ### Making API calls with jQuery
 
@@ -80,17 +80,17 @@ Despite its name, the function doesn't use XML anymore to communicate but JSON.
 
 The "asynchronousness" in `$.ajax()` handles the response in a callback function. This simply means that the response is not immediately returned. When it is available after the API call is made, it will call another function (["callback function"](https://learn.jquery.com/ajax/key-concepts/)), which handles the response and data it returned. This is actually what allows us to continue to use the website. Without it the page would wait until the response is returned before responding to page interaction. Test it yourself:
 
-_`$.ajax()` example where_ `response` _is the callback function_
+_`$.ajax()` example where in the `success` parameter, we define the callback function_
 ```javascript
 // ajax() function use
 $("#demo").click(function(){ // ajax function definition that will be executed on the button's selector
   $.ajax({
     url: "demo.txt", // making a call to a static resource in the same folder
     success: function(result){ // here we define the callback function in the success case
-    $("#div1").html(result); // `.html()` puts the success result into the div selector element
-    console.log("demo has been loaded");
-  }
-});
+      $("#textbox").html(result); // `.html()` puts the success result into the HTML element via div selector
+      console.log("demo has been loaded");
+    }
+  });
 });
 ```
 
