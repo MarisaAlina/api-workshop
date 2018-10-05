@@ -32,6 +32,10 @@ This will allow you to see any log output and help debugging during the challeng
 
 ## Adding Behaviour: defining scripts and using jQuery
 
+__Now it's your turn__
+
+Open the afternoon folder in Atom.
+
 ### Preparing our template
 You might already know that the `link` tag in `<head>` loads the Bulma CSS framework from a content delivery network (CDN). By that, you don’t have to download it or place it in your project. This is another example of an API: everytime the page loads, a request is made to load Bulma's external stylesheet.
 > Read more about this [here](https://css-tricks.com/adding-a-cdn-to-your-website/)
@@ -107,6 +111,7 @@ Note that `$.ajax()` has a handy parameter called `success`, which allows us to 
 __Now it's your turn__
 
 Using jQuery's `$.ajax()` function, we’ll be making a GET request to the [TFL API documentation](https://api.tfl.gov.uk/swagger/ui/index.html?url=/swagger/docs/v1#!/AirQuality/).
+The URL you want to call to get the air pollution is: https://api.tfl.gov.uk/AirQuality
 
 You've seen that the `id=` attributes are used by jQuery to select the HTML elements. Add them to the HTML template.  
 
