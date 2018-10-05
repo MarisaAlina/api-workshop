@@ -11,6 +11,10 @@ Make sure you have the following installed in your computer:
 * [Google Chrome Browser](https://www.google.com/chrome/browser/desktop/)
 * [Postman](https://www.getpostman.com/)
 
+## Morning & Afternoon challenge
+1. Go to the morning folder and follow the instructions in the `morning-challenge.md` file.
+2. The afternoon folder contains the `afternoon-challenge.md` with instructions for this challenge to complete.
+
 ## Other useful links:
 * [Agenda & Info ](http://sagepay-api-workshop.s3-website-eu-west-1.amazonaws.com/)
 * [Workshop-Slides](https://docs.google.com/presentation/d/1xpoDAa8vM2hQdt9AeBPhAG0j6MjsfSCMOmN0YJSwon0/edit?usp=sharing)
