@@ -1,5 +1,6 @@
 # Welcome to the API Workshop at Sage Pay
 APIs have been called "the glue of the digital landscape". Not only do they enable to search for the cheapest flights; without APIs, millions of applications could not interact with each other and make your Internet experience happen. They are a concept as well as technique for devices to connect and plugin to each other's services. By learning about the basics of API development, you will hold the power of connecting services and sharing information in your hands.
+
 Today's workshop at Sage Pay aims at making APIs understandable by teaching & experimenting with their use.
 
 ## Before we start
