@@ -8,8 +8,8 @@ Download (clone) this Github repository and save it on your Desktop. We'll guide
 
 ## Morning & Afternoon challenges
 Read & follow the instructions in the `.md` files. They work best when viewed in your browser, so simply click on the links below.
-1. Go to the morning folder and follow the instructions in the `morning-challenge.md` file. [link](/morning-challenge/morning-challenge.md)
-2. The afternoon folder contains the `afternoon-challenge.md` file with instructions for this challenge to complete. [link](/afternoon-challenge/afternoon-challenge.md)
+1. Go to the morning folder and follow the instructions in the `morning-challenge.md` file: [link](/morning-challenge/morning-challenge.md)
+2. The afternoon folder contains the `afternoon-challenge.md` file with instructions for this challenge to complete: [link](/afternoon-challenge/afternoon-challenge.md)
 
 ## Checklist
 Make sure you have the following installed in your computer to do the challenges:
