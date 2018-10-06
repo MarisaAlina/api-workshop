@@ -20,7 +20,7 @@ Make sure you have the following installed in your computer to do the challenges
 ## Other useful links:
 * [Agenda & Info ](http://sagepay-api-workshop.s3-website-eu-west-1.amazonaws.com/)
 * [Workshop-Slides](https://docs.google.com/presentation/d/1xpoDAa8vM2hQdt9AeBPhAG0j6MjsfSCMOmN0YJSwon0/edit?usp=sharing)
-* [Feedback Survey](https://marisa56.typeform.com/to/Yj2mCx)
+* [Feedback Survey](https://api-workshop.typeform.com/to/Yj2mCx)
 
 # What's next to learn after the workshop:
 To experiment with Backend API development, checkout this tutorial about creating a simple [jQuery client with the Spring framework](https://spring.io/guides/gs/consuming-rest-jquery/) and building the corresponding [`hello world` web service](https://spring.io/guides/gs/rest-service/).
