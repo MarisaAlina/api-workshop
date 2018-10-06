@@ -13,9 +13,9 @@ Make sure you have the following installed in your computer:
 * [Postman](https://www.getpostman.com/)
 
 ## Morning & Afternoon challenges
-Read & follow the instructions in the `.md` files. They work best when viewed in your browser.
-1. Go to the morning folder and follow the instructions in the ![`morning-challenge.md` file](/morning-challenge/morning-challenge.md).
-2. The afternoon folder contains the `afternoon-challenge.md` with instructions for this challenge to complete.
+Read & follow the instructions in the `.md` files. They work best when viewed in your browser, so simply click on the links below.
+1. Go to the morning folder and follow the instructions in the `morning-challenge.md` file ![link](/morning-challenge/morning-challenge.md).
+2. The afternoon folder contains the `afternoon-challenge.md` file with instructions for this challenge to complete ![link](/afternoon-challenge/afternoon-challenge.md).
 
 ## Other useful links:
 * [Agenda & Info ](http://sagepay-api-workshop.s3-website-eu-west-1.amazonaws.com/)
