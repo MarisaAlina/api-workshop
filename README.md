@@ -14,7 +14,7 @@ Make sure you have the following installed in your computer:
 
 ## Morning & Afternoon challenges
 Read & follow the instructions in the `.md` files. They work best when viewed in your browser.
-1. Go to the morning folder and follow the instructions in the `morning-challenge.md` file.
+1. Go to the morning folder and follow the instructions in the ![`morning-challenge.md` file](/morning-challenge/morning-challenge.md).
 2. The afternoon folder contains the `afternoon-challenge.md` with instructions for this challenge to complete.
 
 ## Other useful links:
