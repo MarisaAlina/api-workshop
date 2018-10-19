@@ -17,10 +17,12 @@ Make sure you have the following installed in your computer to do the challenges
 * [Google Chrome Browser](https://www.google.com/chrome/browser/desktop/)
 * [Postman](https://www.getpostman.com/)
 
+
 ## Other useful links:
 * [Agenda & Info ](http://sagepay-api-workshop.s3-website-eu-west-1.amazonaws.com/)
 * [Workshop-Slides](https://docs.google.com/presentation/d/1xpoDAa8vM2hQdt9AeBPhAG0j6MjsfSCMOmN0YJSwon0/edit?usp=sharing)
 * [Feedback Survey](https://api-workshop.typeform.com/to/Yj2mCx)
+* [Security : Women in AppSec](https://www.owasp.org/index.php/Women_In_AppSec)
 
 # What's next to learn after the workshop:
 To experiment with Backend API development, checkout this tutorial on creating a simple [jQuery client with the Spring framework](https://spring.io/guides/gs/consuming-rest-jquery/) and building the corresponding [`hello world` web service](https://spring.io/guides/gs/rest-service/).
